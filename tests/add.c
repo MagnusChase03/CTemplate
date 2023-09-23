@@ -4,5 +4,6 @@
 int main() {
 
     TEST(add(4, 6) == 9);
+    TEST(add(4, 6) == 10);
 
 }
