@@ -14,6 +14,11 @@ TEST_OBJS := $(filter-out $(BIN_DIR)/index.o,$(OBJS))
 
 BIN := ./bin/index
 
+container:
+	sudo podman build -t localhost/gcc . > /dev/null
+	sudo podman run localhost/gcc
+
+build: $(BIN)
 
 $(BIN): $(OBJS)
 	@mkdir -p $(@D)
