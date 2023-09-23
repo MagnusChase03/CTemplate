@@ -1,14 +1,14 @@
-# C Template CD
+# C Template Repo
 
 *Small repo to bootstrap other c projects from.*
 
-# Requirements
+## Requirements
 
 - Podman/Docker
 
 - Make
 
-# Usage
+## Usage
 
 ```sh
 make # Builds and tests on container
