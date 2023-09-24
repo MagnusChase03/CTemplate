@@ -34,6 +34,8 @@ test: $(TEST_BIN)
 		$$test; \
 	done
 
+test_build: $(TEST_BIN)
+
 $(BIN_DIR)/%.test: $(TEST_DIR)/%.c $(TEST_OBJS)
 	@mkdir -p $(@D)
 	$(CC) $(FLAGS) -o $@ $^
