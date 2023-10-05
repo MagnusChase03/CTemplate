@@ -1,9 +1,9 @@
 CC := gcc
 FLAGS := -Wall -I./src -L./bin
 
-SRC_DIR = ./src
-BIN_DIR = ./bin
-TEST_DIR = ./tests
+SRC_DIR := ./src
+BIN_DIR := ./bin
+TEST_DIR := ./tests
 
 SRC := $(shell find $(SRC_DIR) | grep -e "\.c")
 OBJS := $(patsubst $(SRC_DIR)/%.c,$(BIN_DIR)/%.o,$(SRC))
